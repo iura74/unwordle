@@ -45,7 +45,7 @@ const updateBestWorlds = function() {
 }
 
 testButton.addEventListener('click', () => {
-    const word = testWord.value;
+    const word = testWord.value.toLowerCase();
     let result = testResult.value;
     if ((word.length !== worldLenght) || (result.length !== worldLenght) || /$[+-?]+^/.test(result)) {
         return;
